@@ -1,14 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <div>
+    <NavBar />
+    <router-view />
+  </div>
 </template>
 
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
+import NavBar from './components/NavBar.vue';
 </script>
 
 <style>
-#app {
+/* #app {
   @apply antialiased flex flex-col items-center mt-4;
-}
+} */
 </style>
